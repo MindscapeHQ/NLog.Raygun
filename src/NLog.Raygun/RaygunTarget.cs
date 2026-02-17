@@ -108,7 +108,6 @@ namespace NLog.Raygun
     public RaygunTarget()
     {
       IncludeEventProperties = true;
-      OptimizeBufferReuse = true;
       Layout = "${message}";
       _applicationVersion = "${assembly-version:cached=true:type=File}";
     }
